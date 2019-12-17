@@ -1,0 +1,36 @@
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 1px 2px 3px black;
+}
+
+p {
+    color: black;
+}
+
+table {
+    font-size: 16px;
+    width: 30%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, a, li, form {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
