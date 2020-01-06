@@ -1,0 +1,99 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.active {
+  background-color: rgb(123, 210, 231);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: 'Gamja Flower', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+hr.main {
+  border: 2px solid rgb(73, 73, 73);
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  font-style: normal ;
+  font-weight: normal;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Reenie Beanie', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(199, 194, 194);
+}
+
+h3 {
+  font-family: 'Lacquer', sans-serif;
+  font-style: normal ;
+  font-weight: normal;
+  font-size: 48px;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Reenie Beanie', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+div.picture {
+  text-align: center;
+  clear: both;
+}
+
+p {
+  font-family: 'Lacquer', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 72px;
+  text-align: right;
+}
+
+div.polaroid {
+  width: 50%;
+  float: left;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
