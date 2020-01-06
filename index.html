@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Jaokha</title>
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Lacquer|Major+Mono+Display|Reenie+Beanie&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- MAIN BAR here -->
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="gallery.html">Galleries</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><a href="youtube.html">Youtube</a></li>
+    <li><a href="game.html">Game</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<!-- Photo Show -->
+<!-- 1 -->
+<div class="mySlides">
+    <img src="images/me/SHY_2973.jpg" style="width:100%" alt="My test image">
+</div>
+
+<!-- 2 -->
+<div class="mySlides">
+    <img src="images/me/SHY_2988.jpg" style="width:100%" alt="My test image">
+</div>
+
+<!-- 3 -->
+<div class="mySlides">
+    <img src="images/me/SHY_3033.jpg" style="width:100%" alt="My test image">
+</div>
+
+<!-- 4 -->
+<div class="mySlides">
+    <img src="images/me/IMG_5180.jpg" style="width:100%" alt="My test image">
+</div>
+
+<!-- 5 -->
+<div class="polaroid">
+    <img src="images/me/SHY_2991.jpg" alt="Person" style="width:100%">
+    <div class="container">
+    <p>jaokha</p>
+    </div>
+</div>
+</div>
+
+<!-- Topic here -->
+<h1>Jaokha World</h1>
+<h2>Welcome to my Gallery Website</h2>
+<hr class="main">
+<p>Hello!! I’m jaokha nice to meet you.<br>
+    In this website will show you about my works.<br>
+    Hope you like it.<br><br>
+    <img src="images/user.png" style="width:30%" alt="My test image">
+</p>
+
+<!-- PHOTO here -->
+<!-- 1 -->
+<div class="picture">
+    <img src="images/cannon2.jpg" width="50%" height="auto" alt="My test image" align="right">
+    <br><br><br><br><br><br><br>
+    <h3>photo</h3>
+        <h4>All highlight I take the picture.</h4>
+    <br>
+    
+</div>   
+
+<!-- 2 -->
+<div class="picture"> 
+    <img src="images/youtube1.jpg" width="50%" height="auto" alt="My test image" align="left">
+    <br><br><br><br><br><br><br>
+    <h3>youtube</h3>
+        <h4>All highlight I take the picture.</h4>
+
+</div>
+
+<!-- 3 -->
+<div class="picture">
+    <img src="images/nintendo-switch3.jpg" width="50%" height="auto" alt="My test image" align="right">
+    <br><br><br><br><br><br><br>
+    <h3>game</h3>
+        <h4>All highlight I take the picture.</h4>
+    <br>
+</div>
+
+<!-- Function -->
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000); // Change image every 5 seconds
+    }
+</script>
+</body>
+</html>
