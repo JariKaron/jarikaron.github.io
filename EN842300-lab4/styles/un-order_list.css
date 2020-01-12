@@ -1,0 +1,21 @@
+ul {
+    list-style-type: circle;
+}
+
+div.first {
+    width: 250px;
+    text-align: left;
+    font-weight: normal;
+    border: 5px solid blue;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
+div.second {
+    width: 250px;
+    text-align: left;
+    font-weight: normal;
+    border: 5px solid green;
+    background-color: lightgreen;
+    padding: 5px;
+}
