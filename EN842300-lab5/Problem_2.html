@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <link href="styles/lab5_2.css" rel="stylesheet" type="text/css">
+    <title>Accepting and displaying input data</title>
+</head>
+<body>
+    <button>PLAYER 1: CHRIS</button>
+<script>
+    var button = document.querySelector('button');
+    button.onclick = function(){
+        var name = prompt('Enter a new name?')
+        if (name == null) {
+            alert('Please enter your name');
+        }
+        else if (name == '') {
+            alert('Please enter your name');        
+        }
+        else if (name != null) {
+            button.textContent = 'PLAYER 1: ' + name;
+        }
+    }  
+</script>
+</body>
+</html>

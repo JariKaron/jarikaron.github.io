@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Counting and updating the number of clicks</title>
+    <script>
+    var numClicks = 0;
+      document.addEventListener("DOMContentLoaded", function() {
+        function updateClicks() {
+          var para = document.getElementById('result');
+          para.textContent = 'You clicked the button for ' +  ++numClicks;
+          if (numClicks ==1){
+              para.textContent += " time";
+          } else {
+              para.textContent += " times";
+          }
+        }
+        var buttons = document.getElementById("bt1");
+        buttons.addEventListener('click', updateClicks);
+       /* for(var i = 0; i < buttons.length ; i++) {
+          buttons[i].addEventListener('click', updateClicks);
+        }*/
+      });
+    </script>
+  </head>
+  <body>
+    <button id="bt1">Click me</button>
+    <br><br>
+    <result id=result></result>
+  </body>
+</html>
