@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo">Display the result here.</p>
+    <p id="result"></p>
+<script>
+    var person = {firstName:"John", lastName:"Doe",
+    firstname: function(firstName, lastName) {
+        return "Firstname is " + this.firstName; 
+        }
+};
+    document.getElementById("result").innerHTML = person.firstname();    
+</script>
+</body>
+</html>

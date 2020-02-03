@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <p id="result"></p>
+<script>
+    var person = {firstName:"Manee", lastName:"Doe", country:"Thailand"};
+
+    function firstname_contry(firstName,contry) {
+        return "Firstname is " + person.firstName + " is in " + person.country; 
+    }
+    function contry(country) {
+        return person.country; 
+    }
+    document.getElementById("demo").innerHTML = contry(); 
+    document.getElementById("result").innerHTML = firstname_contry();    
+</script>
+</body>
+</html>
