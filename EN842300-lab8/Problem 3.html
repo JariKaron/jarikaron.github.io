@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Problem 3</title>
+</head>
+<body>
+<button id="stop" type="button">stop</button>
+    <div id="countup">0 seconds have gone by!</div>
+
+</div>
+<script>
+    var stop = document.getElementById("stop")
+    var countdown = document.getElementById("countup");
+        var countItUp = function() {
+            var currentTime = parseFloat(countup.textContent);
+                countup.textContent = currentTime + 1 + " seconds have gone by!";
+            }
+        stop.onclick = function() {
+            window.clearInterval(timer);
+}
+        var timer = window.setInterval(countItUp, 1000);
+</script>
+</body>
+</html>

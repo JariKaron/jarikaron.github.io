@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Problem 1</title>
+</head>
+<body>
+    <br>
+    What's your name?<input type="text" id="name"><br><br>
+    <label>What language do you speak?
+<select id="lang">
+  <option value="en">English</option>
+  <option value="es">Spanish</option>
+  <option value="plt">Pig-latin</option>
+</select>
+</label>
+<br>
+<button id="button" type="button">Greet me, please!</button>
+<div id="message"></div>
+</div>
+<script>
+    var button = document.getElementById('button');
+    var onButtonClick = function() {
+        var name = document.getElementById('name').value; 
+        var lang = document.getElementById('lang').value;
+        var result;
+  
+        if (lang === "en") {
+            result = "Hello, " + name;
+        }
+        else if (lang === "es") {
+            result = "Hola, " + name;
+        } else if (lang === "plt") {
+            result = "Ello-hay, " + name;
+        }
+        document.getElementById("message").textContent += result;
+    };
+    button.addEventListener("click", onButtonClick);
+</script>
+</body>
+</html>

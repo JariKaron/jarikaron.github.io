@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Problem 2</title>
+</head>
+<body>
+    <h1>Mad Libs</h1>
+    <ul>
+        <li>Noun:<input type="text" id="noun"></li>
+        <li>Adjective:<input type="text" id="adj"></li>
+        <li>Someone's Name:<input type="text" id="s_name"></li>
+    </ul>
+<br>
+<button id="button" type="button">Lib it!</button>
+<br>
+<div id="message">Generated story: </div>
+</div>
+<script>
+    var button = document.getElementById('button');
+    var onButtonClick = function() {
+        var noun = document.getElementById('noun').value; 
+        var adj = document.getElementById('adj').value;
+        var s_name = document.getElementById('s_name').value;
+        var result = s_name + " is " + adj + " and loves to eat " + noun;;
+  
+        document.getElementById("message").textContent += result;
+    };
+    button.addEventListener("click", onButtonClick);
+</script>
+</body>
+</html>

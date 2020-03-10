@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4</title>
+</head>
+<body>
+    <img src="images/giphy.gif" id="pokemon" style="position: absolute;">
+<div></div>
+
+</body>
+<script>
+    var pokemon = document.getElementById("pokemon");
+
+    pokemon.style.width = "200px";
+    pokemon.style.left = "0px";
+
+    var startTime = new Date().getTime();
+    var makeItMove = function(){
+        var curTime = new Date().getTime();
+        var newmove = (0 + ((curTime - startTime) / 1000) * 30);
+        pokemon.style.left = newmove + "px";
+        if (newmove < 10000) {
+            window.requestAnimationFrame(makeItMove)
+        }
+    };
+    makeItMove();
+</script>
+</html>
