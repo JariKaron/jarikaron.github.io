@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple DOM example</title>
+  </head>
+  <body>
+      <section>
+        <img src="images/en-kku.jpg" alt="KKU">
+        <p>We hope you enjoy learning
+            <a href="https://www.en.kku.ac.th/web/"></a>
+        </p>
+      </section>
+
+    <script>
+        var text_p = document.querySelector("p")
+        var img_p = document.querySelector("img")
+        text_p.style.backgroundColor = "black"
+        text_p.style.height = "100px"
+        text_p.style.width = "800px"
+        text_p.style.color = "white"
+        text_p.style.textAlign = "center"
+        text_p.style.fontSize = "55px"
+        img_p.style.cursor = "pointer"
+        img_p.addEventListener("click", function() {
+            window.location.href = "https://www.en.kku.ac.th/web/"
+        })
+    </script>
+  </body>
+</html>
